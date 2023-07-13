@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700;900&family=Orbitron:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Aweseome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Fashion project</title>
+  </head>
+  <body>
+    <section id="title">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SmartFit</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trends</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="hero-left col-lg-6">
+          <h1 class="heading-primary">Revolutionize your wardrobe with AI</h1>
+          <p class="hero-description">
+            Discover the latest trends and elevate your style with our curated
+            collection of fashion essentials.
+          </p>
+          <button type="button" class="btn btn-lg shop-button">
+            Shop Now <i class="fa-light fa-arrow-up-right"></i>
+          </button>
+          <div class="customers-section">
+            <div>
+              <h3 class="heading-tertiary">
+                400k<span class="orange-text">+</span>
+              </h3>
+              <p>Happy customers</p>
+            </div>
+            <div class="vertical-line"></div>
+            <div>
+              <h3 class="heading-tertiary">
+                99.<span class="orange-text">99</span>%
+              </h3>
+              <p>Customer satisfaction</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right col-lg-6">
+          <img
+            class="hero-image"
+            src="images/girl-g59f316471_1280.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section id="featuredin">
+      <div class="container-fluid featuredin-body">
+        <h2 class="heading-quaternary">Featured On</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <img
+              class="brand-logo"
+              src="images/brands/BBC-Entertainment-logo.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <img
+              class="brand-logo"
+              src="images/brands/Harpers-Bazaar-logo.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <img
+              class="brand-logo"
+              src="images/brands/Proceso-Magazine-logo.svg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <img class="brand-logo" src="images/brands/VOGUE-logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonial">
+      <h2 class="testimonial-title heading-tertiary">What Our Customers Say</h2>
+      <div class="container-fluid testimonial-card">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-item-inner">
+                <img
+                  class="customer-image"
+                  src="images/faces/person1.JPEG"
+                  alt=""
+                />
+                <p class="carousel-text">
+                  I am so impressed with the AI-powered clothing suggestions on
+                  SmartFit. The recommendations are personalized and spot-on,
+                  making online shopping a breeze. Thank you for making my life
+                  easier!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-item-inner">
+                <img
+                  class="customer-image"
+                  src="images/faces/person2.JPEG"
+                  alt=""
+                />
+
+                <p class="carousel-text">
+                  What sets SmartFit apart from other platforms is the level of
+                  personalization and accuracy in their recommendations. AI
+                  system really takes into account my style preferences and body
+                  type.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-item-inner">
+                <img
+                  class="customer-image"
+                  src="images/faces/person3.JPEG"
+                  alt=""
+                />
+
+                <p class="carousel-text">
+                  The website is incredibly user-friendly, and the shopping
+                  experience is seamless. I appreciate the attention to detail
+                  and the thought that has gone into creating such a fantastic
+                  platform.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="row gx-5 gy-4">
+        <div class="col-md-4">
+          <h4 class="heading-footer">Contact US</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+            labore veniam in eum ipsa sapiente autem
+          </p>
+          <p><i class="fa-solid fa-phone"></i> (001) 123-4567</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="heading-footer">Follow Us on Social Media</h4>
+          <div class="social-icons">
+            <i class="social-icon fa-brands fa-instagram"></i>
+            <i class="social-icon fa-brands fa-twitter"></i>
+            <i class="social-icon fa-brands fa-facebook"></i>
+            <i class="social-icon fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4 class="heading-footer">Related Links</h4>
+          <div class="footer-related-links">
+            <a class="related-link" href="">Blog</a>
+            <a class="related-link" href="">How it works</a>
+            <a class="related-link" href="">Our staff</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

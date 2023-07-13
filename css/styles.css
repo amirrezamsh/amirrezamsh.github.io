@@ -1,0 +1,306 @@
+/* --- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px */
+
+/* General Reusable Rules */
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #666666;
+  background-color: #ffeadb;
+}
+
+.heading-primary,
+.heading-tertiary,
+.heading-quaternary {
+  font-family: "Orbitron", sans-serif;
+  color: #331f18;
+  font-weight: 700;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  text-transform: capitalize;
+  margin: 3rem 0;
+}
+
+.heading-tertiary {
+  font-size: 3.6rem;
+}
+
+.heading-quaternary {
+  font-size: 2.4rem;
+  color: #4c2e23;
+}
+
+.heading-footer {
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+  font-weight: 700;
+}
+
+.vertical-line {
+  border-right: 3px solid #331f18;
+  height: 6rem;
+  margin: 0 10px;
+}
+
+.orange-text {
+  color: #ff9a76;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 0;
+}
+
+/* Title Section */
+
+#title {
+  padding: 0 10%;
+}
+
+/* Navbar section */
+.navbar-brand {
+  color: #ff9a76;
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-item:first-child {
+  margin-left: 0;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+/* Hero Section */
+
+.hero-left {
+  padding-top: 4%;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.hero-image {
+  width: 75%;
+}
+
+.shop-button {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  background-color: #ff9a76;
+  color: #fff;
+  margin: 7% 0 9%;
+}
+
+.shop-button:hover {
+  background-color: #e68b6a;
+  color: #fff;
+}
+
+.customers-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+/* Featured-In Section */
+
+.featuredin-body {
+  text-align: center;
+  background-color: #fff;
+
+  padding: 2% 14%;
+}
+
+.brand-logo {
+  width: 60%;
+}
+
+/* Testimonial Section */
+
+#testimonial {
+  text-align: center;
+  padding: 3% 14% 7%;
+  background-color: #ffeadb;
+}
+
+.testimonial-title {
+  margin-bottom: 2.4rem;
+}
+
+.testimonial-card {
+  background-color: #b3a499;
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px #888888;
+}
+
+.carousel-item-inner {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  column-gap: 2rem;
+  padding: 4% 10%;
+}
+
+.carousel-text {
+  text-align: left;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.customer-image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Footer Section */
+
+#footer {
+  padding: 5% 10%;
+  background-color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.social-icon {
+  font-size: 2rem;
+}
+
+.footer-related-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.related-link {
+  text-decoration: none;
+  color: #804d3b;
+  font-size: 1.6rem;
+}
+
+@media (min-width: 992px) and (max-width: 1270px) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+
+  .hero-image {
+    width: 85%;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    text-align: center;
+  }
+
+  .navbar {
+    text-align: left;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .customers-section {
+    justify-content: center;
+  }
+
+  .shop-button {
+    margin: 7% auto 9%;
+  }
+}
+
+@media (max-width: 524px) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .heading-quaternary {
+    font-size: 2rem;
+  }
+
+  .heading-footer {
+    font-size: 1.6rem;
+  }
+
+  .brand-logo {
+    width: 35%;
+  }
+
+  .carousel-item-inner {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 4% 10%;
+  }
+
+  .carousel-text {
+    grid-row: 1 / 2;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .customer-image {
+    width: 35%;
+    margin-bottom: 2rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
